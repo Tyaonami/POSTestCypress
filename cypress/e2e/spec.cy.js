@@ -5,8 +5,8 @@ Cypress.on('uncaught:exception', (err, runnable) => {
 
   describe("creating & editing customers in POS", () => {
     beforeEach(() => {
-      //Enter yor autor date clientCode,username, password
-      cy.login("clientCode", "username", "password")
+      //Enter  autorization data clientCode,username, password
+      cy.login("clientCode", "username", "password");
       cy.get('[data-testid="customer-badge-icon-span"]').click();
     })
 
